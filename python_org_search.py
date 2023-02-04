@@ -6,8 +6,8 @@ from selenium.webdriver.chrome.options import Options
 
 
 url = "http://192.168.102.107:8080"
-#$username = sys.argv[1]
-#$password = sys.argv[2]
+username = sys.argv[1]
+password = sys.argv[2]
 
 chrome_options = Options()
 
@@ -24,6 +24,6 @@ driver = webdriver.Chrome(chrome_options=chrome_options)
 username = driver.find_element(By.ID,"username")
 password = driver.find_element(By.ID,"password")
 
-username.send_keys("airflow")
-password.send_keys("airflow")
+username.send_keys(username)
+password.send_keys(password)
 password.send_keys(Keys.RETURN)
