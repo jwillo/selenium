@@ -1,0 +1,27 @@
+1675485774962	geckodriver	INFO	Listening on 127.0.0.1:52884
+1675485778042	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52885" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jwilson\\AppData\\Local\\Temp\\5\\rust_mozprofile2QCCnk"
+1675485778463	Marionette	INFO	Marionette enabled
+1675485778468	Marionette	INFO	Listening on port 52897
+WebDriver BiDi listening on ws://localhost:52885
+Read port: 52897
+1675485778587	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\jwilson\\AppData\\Local\\Temp\\5\\rust_mozprofile2QCCnk\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52885/devtools/browser/e8ea0b52-df70-4ee1-9475-d4f7924f5a43
+JavaScript error: https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js, line 1: Error: No ad placements found.
+JavaScript error: resource:///actors/FormValidationChild.jsm, line 184: TypeError: this._element is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.python.org"
+1675485780458	Marionette	INFO	Stopped listening on port 52897
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+[Parent 7536, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+[Parent 7536, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1675486684577	geckodriver	INFO	Listening on 127.0.0.1:53335
+1675486687643	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53336" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jwilson\\AppData\\Local\\Temp\\5\\rust_mozprofileUlzmQw"
+1675486687918	Marionette	INFO	Marionette enabled
+1675486687923	Marionette	INFO	Listening on port 53347
+WebDriver BiDi listening on ws://localhost:53336
+Read port: 53347
+1675486688108	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\jwilson\\AppData\\Local\\Temp\\5\\rust_mozprofileUlzmQw\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53336/devtools/browser/a6ccf612-2f5b-4a3c-a322-29dc0cf2e96f
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.google.com"
+1675486696404	Marionette	INFO	Stopped listening on port 53347
