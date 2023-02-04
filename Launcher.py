@@ -24,11 +24,10 @@ chrome_options.add_argument("--disable-save-password-bubble")
 driver = webdriver.Chrome(chrome_options=chrome_options)
 
 
-username_input = browser.find_element_by_id("username")
-username_input.send_keys(username)
+username_input = driver.find_element(By.ID,"username")
+password_input = driver.find_element(By.ID,"password")
 
-password_input = browser.find_element_by_id("password")
+username_input.send_keys(username)
 password_input.send_keys(password)
 
-# Submit the form
 password_input.send_keys(Keys.RETURN)

@@ -5,9 +5,11 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 
 
-url = "http://192.168.102.107:8080"
+
 username = sys.argv[1]
 password = sys.argv[2]
+
+url = "http://192.168.102.107:8080"
 
 chrome_options = Options()
 
@@ -21,9 +23,9 @@ chrome_options.add_argument("--disable-save-password-bubble")
 driver = webdriver.Chrome(chrome_options=chrome_options)
 
 
-username = driver.find_element(By.ID,"username")
-password = driver.find_element(By.ID,"password")
+username_input = driver.find_element(By.ID,"username")
+password_input = driver.find_element(By.ID,"password")
 
-username.send_keys(username)
-password.send_keys(password)
-password.send_keys(Keys.RETURN)
+username_input.send_keys(username)
+password_input.send_keys(password)
+password_input.send_keys(Keys.RETURN)
