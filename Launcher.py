@@ -4,10 +4,13 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 
+username = sys.argv[1]
+password = sys.argv[2]
+
+##uncomment the second line, and comment out the first to allow URL input from the input arguments.
 
 url = "http://192.168.102.107:8080"
-#$username = sys.argv[1]
-#$password = sys.argv[2]
+#url = sys.argv[3] 
 
 chrome_options = Options()
 
@@ -21,9 +24,11 @@ chrome_options.add_argument("--disable-save-password-bubble")
 driver = webdriver.Chrome(chrome_options=chrome_options)
 
 
-username = driver.find_element(By.ID,"username")
-password = driver.find_element(By.ID,"password")
+username_input = browser.find_element_by_id("username")
+username_input.send_keys(username)
 
-username.send_keys("airflow")
-password.send_keys("airflow")
-password.send_keys(Keys.RETURN)
+password_input = browser.find_element_by_id("password")
+password_input.send_keys(password)
+
+# Submit the form
+password_input.send_keys(Keys.RETURN)
