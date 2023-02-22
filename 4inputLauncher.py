@@ -14,7 +14,7 @@ password = sys.argv[2]
 netbios = sys.argv[3]
 fqdn = sys.argv[4]
 
-user = netbios"@"+username+"@"+fqdn 
+user = netbios+"\""+username+"@"+fqdn 
 
 ##uncomment the second line, and comment out the first to allow URL input from the input arguments.
 url = "http://192.168.102.107:8080"
