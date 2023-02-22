@@ -35,7 +35,7 @@ driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
 username_input = driver.find_element(By.ID,"username")
 password_input = driver.find_element(By.ID,"password")
 
-username_input.send_keys(username)
+username_input.send_keys(user)
 password_input.send_keys(password)
 
 password_input.send_keys(Keys.RETURN)
